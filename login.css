@@ -1,0 +1,94 @@
+.myvedeo{
+  position: fixed;
+  right:0 ;
+  bottom: 0;
+  width: 100%;
+  height: 120%;
+}
+body{
+    color: crimson;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.comtiner{
+    background-color: rgba(255, 248, 220, 0.349);
+    padding: 20px 40px;
+    border-radius: 5px;
+    z-index: 10;
+    backdrop-filter:blur(6px) ;
+}
+.comtiner h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.comtiner a{
+    text-decoration: none;
+    color: #3309ec;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+
+}
+.btn:focus{
+outline:0;
+
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.text{
+    margin-top: 30px;
+    text-align: center;
+}
+.login-contorol{
+    position:relative;
+    margin:20px 0px 40px;
+    width: 300px;
+}
+
+.login-contorol input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(41, 10, 214);
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #3309ec;
+}
+.login-contorol input:focus,
+.login-contorol input:valid{
+    outline: 0;
+    border-bottom: chocolate;
+
+}
+.login-contorol label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+.login-contorol label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.36s cubic-bezier(0.68 , -0 ,0.256,1.55);
+}
+.login-contorol input:focus + label span,
+.login-contorol input:valid + label span{
+ color: darkmagenta;
+ transform: translateY(-30px);
+
+}
